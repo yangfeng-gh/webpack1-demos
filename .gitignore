@@ -1,2 +1,16 @@
+# IDE
+.vscode
+.idea
+
+# macos
+.DS_Store
+
+# windows
+
+# liinux
+
+# project
 node_modules
 npm-debug.log
+dist/
+bundle*.js

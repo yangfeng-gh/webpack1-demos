@@ -1,5 +1,4 @@
 var HtmlwebpackPlugin = require('html-webpack-plugin');
-var OpenBrowserPlugin = require('open-browser-webpack-plugin');
 var path = require('path')
 
 module.exports = {
@@ -7,7 +6,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'js/[name].[chunkhash].js',
-        publicPath: '/'
+        publicPath: './'
     },
     module: {
         loaders: [{
@@ -20,7 +19,12 @@ module.exports = {
         }]
     },
     plugins: [
-        new HtmlwebpackPlugin({ title: 'demo05', template: './src/template/index.ejs', filename: 'index.html', inject: true }),
-        new OpenBrowserPlugin({ url: 'http://localhost:8080' })
+        new HtmlwebpackPlugin({
+            title: 'demo05',
+            template: './src/template/index.ejs',
+            filename: 'index.html',
+            inject: true,
+            favicon: path.resolve('favicon.ico'),
+        })
     ]
 };
