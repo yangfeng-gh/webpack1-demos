@@ -22,6 +22,7 @@
     "html-webpack-plugin": "2.x",
     "jquery": "~2.1.4",
     "jsx-loader": "~0.13.2",
+    "lodash": "^4.17.10",
     "open-browser-webpack-plugin": "0.0.1",
     "react": "~0.14.2",
     "react-dom": "~0.14.2",

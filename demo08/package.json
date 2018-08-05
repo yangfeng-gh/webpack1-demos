@@ -10,8 +10,9 @@
   "author": "Ruan Yifeng",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --config build/webpack.config.js",
-    "start": "webpack-dev-server --config build/webpack.config.js"
+    "build": "webpack --config webpack.config.js",
+    "prestart": "npm run build",
+    "start": "webpack-dev-server --config webpack.config.js"
   },
   "dependencies": {
     "babel-core": "~6.0.20",

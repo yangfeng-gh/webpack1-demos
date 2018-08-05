@@ -13,6 +13,7 @@ module.exports = {
       {
         test: /\.js[x]?$/,
         exclude: /node_modules/,
+        // loader: 'jsx-loader?harmony'
         loader: 'babel-loader',
         query: {
           presets: ['es2015', 'react']

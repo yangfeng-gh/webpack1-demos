@@ -9,6 +9,6 @@ module.exports = {
     filename: 'bundle.js'
   },
   plugins: [
-    new webpack.optimize.CommonsChunkPlugin(/* chunkName= */'vendor', /* filename= */'vendor.js')
+    new webpack.optimize.CommonsChunkPlugin(/* chunkNames= */'vendor', /* filenameTemplate= */'vendor.js')
   ]
 };

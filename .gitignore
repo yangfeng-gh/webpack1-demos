@@ -13,4 +13,5 @@
 node_modules
 npm-debug.log
 dist/
-bundle*.js
+*bundle*.js
+vendor*.js
