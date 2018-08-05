@@ -21,7 +21,7 @@ module.exports = {
   module: {
     loaders: [{
       test: /\.jsx?$/,
-      loader: ['babel-loader?presets[]=es2015&presets[]=react'],
+      loaders: ['babel-loader?presets[]=es2015&presets[]=react'],
       include: path.join(__dirname, '.')
     }]
   }
