@@ -477,7 +477,7 @@ module.exports = {
       }
     })
   ]
-};
+};｀
 ```
 
 After launching the server, `main.js` will be minified into following.
